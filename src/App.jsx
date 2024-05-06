@@ -1,7 +1,14 @@
-export default function App() {
+import './App.css';
+import Body from './components/Body';
+import {Toaster} from "react-hot-toast"
+
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Lets start the project
-    </h1>
-  )
+    <div className="App">
+      <Body/>
+      <Toaster/>
+    </div>
+  );
 }
+
+export default App;
